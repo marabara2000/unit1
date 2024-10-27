@@ -18,7 +18,11 @@ repositories {
 //    useJUnitPlatform()
 //}
 
-dependencies { testImplementation("org.testng:testng:7.1.0") }
+//dependencies { testImplementation("org.testng:testng:7.1.0") }
+//
+//tasks.test { useTestNG() }
 
-tasks.test { useTestNG() }
+dependencies { testImplementation ("junit:junit:4.13") }
+
+tasks.test {useJUnit()}
 
